@@ -1,0 +1,24 @@
+dreamDEX© 2026 - DreamDEX, S.A.TermsPrivacy policySupportTestnetTradeEventsSupportTradeEventsSupport© 2026 - DreamDEX, S.A.TermsPrivacy policySupportTestnetTradeEventsPerps ArenaLenddreamBotSupportTradeEventsPerps ArenaLenddreamBotSupportConnectPerps Arena is live. $15,000 in rewards. No deposit required. Terms apply.  Join Perps Arena.
+
+dreamBot Builder
+# 
+
+Build a trading bot, test it safely, and go live on dreamDEX when you're ready.
+
+Non-custodial. Your private key never touches this site. You add it yourself, on your own machine or cloud.
+
+Open source. The bot kit is public on GitHub — audit every line before you run it.
+
+Testnet first. Every template defaults to testnet + dry-run. Nothing goes live until you flip it.
+
+The dreamBot Builder is a technical tool for configuring and deploying automated trading strategies that you select, parameterise, and control. Nothing on this page, including the strategy templates, is investment, financial, or trading advice, or a recommendation to deploy any strategy. DreamDEX does not manage or monitor your bot and never has access to your keys.
+
+Automated trading involves substantial risk, including total loss of deployed funds. Strategies can behave unexpectedly, and past or simulated performance is not indicative of future results. You are solely responsible for the strategies you deploy, the parameters you set, the credentials you use, and any losses you incur.
+
+Use of the builder and interface is governed by the DreamDEX Terms of Service. The template strategies and underlying code are open source and additionally subject to the Repository Legal Disclaimer. By deploying a bot you confirm that you have read and agree to these documents and that your use is lawful in your jurisdiction.
+
+Set up your dreamBotBuild, test, and deploy dreamBots for Spot and Event Contracts, in five steps. Your private key never touches this widget.
+
+1Connect wallet2Strategy3Network4Tune5Deploy botConnect your wallet to register. Your bot's volume only counts once your wallet is linked.
+
+ConnectNext: Strategy

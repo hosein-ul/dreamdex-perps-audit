@@ -1,0 +1,85 @@
+Somnia Markets · Somnia DocsDocsSections
+
+Get startedBlockchainMarketsData & TruthAgents & AutomationSettlement & LiquidityBuildMarkets
+
+Overview
+Protocols
+
+Somnia MarketsContracts
+Market making
+Getting started
+
+Somnia Explorer↗Platform site↗Explorer↗Get startedBlockchainMarketsData & TruthAgents & AutomationSettlement & LiquidityBuild⌘KSomnia Markets
+
+Somnia Markets
+# 
+
+On-chain order books for spot, binary and perpetual markets on Somnia: one matching engine, settled and resolved on-chain, with a typed SDK.
+
+Somnia Markets is a decentralized information and trading protocol on
+Somnia: one fully on-chain central limit order-book
+engine runs every market family — spot pairs, binary information
+markets, and perps — alongside a realtime on-chain index-price feed.
+Everything is on-chain and permissionless: order matching, escrow, settlement,
+market creation (per-venue), and resolution. The APIs below are conveniences
+over the same public contracts — nothing they do is privileged.
+
+Spot markets are plain base/quote order books (e.g. SOMI/USDC), each pool
+pushing a smoothed on-chain mark price straight from its own book.
+
+Binary markets are the information leg: a YES/NO question — such as an
+asset above a strike at expiry — whose outcome shares trade on the book at
+prices that are probabilities, so each book doubles as a live on-chain
+forecast. Shares are ERC-6909 positions backed 1:1 by collateral: a complete
+set (1 YES + 1 NO) always mints from and merges back to exactly one collateral
+unit, the winning side redeems 1:1 at resolution, and resolution itself is
+driven on-chain by the Prophecy oracle through Somnia&#39;s reactivity — no
+operator in the loop. Each market carries an on-chain kind tag
+(`marketType()`); future kinds (multi-outcome, dual-book) extend the same
+protocol.
+
+Perps are linear, collateral-settled perpetuals — cross-margin via the
+MarginBank, on-chain funding and liquidations — live on testnet.
+
+Ways to integrate
+## 
+
+The TypeScript SDK — `@somnia-chain/markets-sdk`. The fastest path for
+apps and bots in a JS runtime: realtime order books, trades, candles, and
+positions streamed with zero polling, plus a typed trader for placing orders,
+managing margin, and minting/redeeming outcome shares. Start with
+The SDK, then
+The exchange API; the per-family guides —
+Spot markets,
+Binary markets,
+Perps — cover what differs per kind, and
+Architecture explains how it works
+under the hood. The generated
+API reference lists every
+exported function, hook and type.
+
+Raw smart contracts — no SDK. Any language, any runtime, nothing but an
+RPC node and the ABIs: discover markets, place orders, and materialize a live
+local order book straight from contract events.
+Raw Smart-Contract Integration is the end-to-end guide;
+Market Making covers what is venue-specific for
+quoting operations — book encoding, escrow semantics, event caveats, market
+lifecycle.
+
+Going deeper
+## 
+
+The System page is the live deployment view: every protocol
+contract with its address, owner, and implementation, plus indexer health.
+
+The API reference in the sidebar is generated from the SDK source (TypeDoc).
+
+These docs are also served machine-readable at `/llms.txt` and
+`/llms-full.txt`.
+
+Edit this page
+
+NextContractsOn this page
+
+Ways to integrate
+Going deeper

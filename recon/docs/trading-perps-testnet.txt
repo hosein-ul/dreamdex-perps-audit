@@ -1,0 +1,147 @@
+dreamDEXSearch docs…⌘KWelcome
+
+Introduction
+Why dreamDEX?
+Making Your First Deposit
+Quick Start
+Roadmap
+Trading
+
+Overview
+Common
+
+Fees
+Collateral Yield Algorithm
+Order Types
+Link a Bot
+Spot
+
+Overview
+Simple Swap
+Operators & Session Keys
+Stop Orders
+Event Contracts
+
+Overview
+Settlement & Voids
+FAQ
+Perps (Testnet)
+
+Overview
+Margin & Liquidations
+Funding
+Orders
+Lend
+
+Overview
+Developers
+
+Overview
+Contracts
+
+Overview
+Addresses
+Specifications
+Functions
+Events
+Types
+Errors
+SpotRouter
+HTTP API
+
+Overview
+Error Handling
+Authentication
+Market Data
+Trading
+Builder Fees
+Vault
+Wallets
+Portfolio
+Libraries
+
+Overview
+CCXT
+Event Contracts
+
+Overview
+Recipes
+Market Structure & Lifecycle
+Contracts & Addresses
+Gotchas
+Perps (Testnet)
+
+Overview
+WebSocket API
+
+Overview
+Real-Time Feed
+Operations
+Errors
+Security
+
+Risks
+Audits
+Support
+
+Overview
+Get help
+FAQ
+
+Overview
+My funds are not showing
+My order was rejected
+My stop did not work
+My Event Contract settled against me
+Fees and gas
+I got scammed or hacked
+Perps on Testnet
+# 
+
+Perpetual futures (perps) are live on the dreamDEX testnet for paper trading. A perp is a leveraged long or short on an asset's price with no expiry date. Funding payments between longs and shorts keep it tracking the asset instead.
+
+Testnet perps run in the DreamDEX region of app.testnet.dreamdex.io. Everything here uses test funds: nothing you win or lose is real money.
+
+Perps are on the testnet only. There are no perp markets on mainnet yet.
+
+Get started
+## 
+
+Sign in at app.testnet.dreamdex.io. On testnet your wallets live in DreamDEX, the region the perp markets are in.
+
+Get paper USDso. Join Perps Arena, the paper-trading competition, to receive 1,000 paper USDso to trade with. See Paper USDso for what you can do with it.
+
+Move margin into Perps if you hold USDso in your spot wallet: open Perps ⇆ Spot on the perps page and move it from Spot wallet to Perps account. Perp orders only use margin that is already in the Perps account.
+
+Place an order. Pick a market, set your size and leverage, and choose a market or limit order. See Orders.
+
+Want a bot to trade for you? Link a Bot lets one trade a wallet of yours without being able to withdraw.
+
+Costs
+## 
+
+Maker fee0Taker fee0FundingPaid between longs and shorts every hour, never to the protocol. See FundingLiquidation feeUp to 1% of the notional closed, only if you are liquidated. See Margin & LiquidationsTP and SL0.15 STT held per pending TP or SL, refunded when you cancel it. See Orders
+Markets
+## 
+
+All 21 markets are margined in USDso. Paper USDso shows whether the Perps Arena credit can open positions in that market (see Paper USDso).
+
+MarketMax leverageInitial / maintenance marginPrice tickMin sizeOpen interest capPaper USDsoBTC-PERP20x5% / 2.5%0.10.00013 BTC246.81545 BTCYesETH-PERP20x5% / 2.5%0.010.004 ETH3,995.6125 ETHYesHYPE-PERP20x5% / 2.5%0.010.12 HYPE23,812.72 HYPEYesSOL-PERP20x5% / 2.5%0.010.1 SOL47,654.44 SOLYesXRP-PERP20x5% / 2.5%0.00016.9 XRP344,632 XRPYesADA-PERP10x10% / 5%0.000146 ADA2,254,678 ADAYesAVAX-PERP10x10% / 5%0.0011.4 AVAX66,672.2 AVAXYesBNB-PERP10x10% / 5%0.0010.014 BNB693.975 BNBYesDOGE-PERP10x10% / 5%0.00001120 DOGE5,613,590 DOGEYesLINK-PERP10x10% / 5%0.0010.9 LINK42,643.6 LINKYesNEAR-PERP10x10% / 5%0.00015.1 NEAR250,410 NEARYesSUI-PERP10x10% / 5%0.000113 SUI635,009 SUIYesXLM-PERP10x10% / 5%0.000154 XLM2,677,780 XLMYes1000PEPE-PERP5x20% / 10%0.00000012,700 1000PEPE130,285,600 1000PEPENoLIT-PERP5x20% / 10%0.00012.8 LIT138,896.6 LITNoPUMP-PERP5x20% / 10%0.0000011,800 PUMP87,993,700 PUMPNoTAO-PERP5x20% / 10%0.0010.044 TAO2,185.491 TAOYesVVV-PERP5x20% / 10%0.0010.44 VVV21,786.14 VVVNoWLD-PERP5x20% / 10%0.000126 WLD1,264,000 WLDYesZEC-PERP5x20% / 10%0.0010.009 ZEC420 ZECNoZRO-PERP5x20% / 10%0.00015.1 ZRO250,599.5 ZRONo
+
+These figures are read from the live markets and can be retuned at any time. The open interest cap is market-wide, across every account, and is held in the base asset. A single account is capped at a tenth of it on most markets.
+
+Leverage cuts both ways. Maintenance margin is half the initial margin, so a position opened at the full 20x is liquidated after a move of roughly 2.5% against it. This is a testnet for practice and testing, and nothing here is financial advice.
+
+Where to go next
+## 
+
+Margin & Liquidations: margin modes, leverage, paper USDso and what happens when margin runs out
+
+Funding: who pays whom, and when
+
+Orders: order types, TP/SL and stop orders
+
+Building a bot or testing the SDK: Perps on Testnet for developers
+
+© 2026 - DreamDEX, S.A.TermsPrivacy policySupportTestnetTradeEventsSupportTradeEventsSupport© 2026 - DreamDEX, S.A.TermsPrivacy policySupportTestnetTradeEventsPerps ArenaLenddreamBotSupportTradeEventsPerps ArenaLenddreamBotSupportConnectPerps Arena is live. $15,000 in rewards. No deposit required. Terms apply.  Join Perps Arena.
+

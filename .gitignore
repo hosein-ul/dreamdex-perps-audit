@@ -1,0 +1,4 @@
+.env
+private-security/
+node_modules/
+repos/
